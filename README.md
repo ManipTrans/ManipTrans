@@ -99,12 +99,12 @@ Please chekout our full HO-Tracker challenge at ICCV 2025 HANDS workshop [here](
 The workshop is based on ManipTrans, OakInk-V2 and GigaHands. If you find this work useful, please consider citing:  
 
 ```bibtex
-@inproceedings{li2025maniptrans,
-  title={ManipTrans: Efficient Dexterous Bimanual Manipulation Transfer via Residual Learning},
-  author={Li, Kailin and Li, Puhao and Liu, Tengyu and Li, Yuyang and Huang, Siyuan},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2025}
-}
+  @inproceedings{li2025maniptrans,
+    title={Maniptrans: Efficient dexterous bimanual manipulation transfer via residual learning},
+    author={Li, Kailin and Li, Puhao and Liu, Tengyu and Li, Yuyang and Huang, Siyuan},
+    booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+    year={2025}
+  }
 ```
 
 ```bibtex
