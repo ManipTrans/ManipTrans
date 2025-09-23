@@ -104,6 +104,7 @@ def launch_rlg_hydra(cfg: DictConfig):
     from lib.utils.wandb_utils import WandbVideoCaptureWrapper
     from lib.rl.network_builder_residual_sh import ResRHDictObsBuilder, ResLHDictObsBuilder
     from lib.rl.network_builder_residual_bih import ResBiHDictObsBuilder
+
     from lib.rl.res_models import (
         ModelA2CContinuousLogStdResRH,
         ModelA2CContinuousLogStdResLH,

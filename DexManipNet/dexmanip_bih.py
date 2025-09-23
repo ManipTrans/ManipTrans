@@ -42,7 +42,7 @@ class DexManipBiH:
         args,
         rollout_seq,
     ):
-
+    
         self.gym = gymapi.acquire_gym()
         self.sim_params = gymapi.SimParams()
 

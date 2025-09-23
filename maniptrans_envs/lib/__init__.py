@@ -14,6 +14,7 @@ TASK_MAP = {
     "ResDexHandRH": DexHandManipRHEnv,
     "ResDexHandLH": DexHandManipLHEnv,
     "ResDexHandBiH": DexHandManipBiHEnv,
+    "ResDexHandBiHSO": DexHandManipBiHSOEnv,
 }
 
 

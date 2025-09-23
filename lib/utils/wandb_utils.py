@@ -75,7 +75,8 @@ class WandbVideoCaptureWrapper(gym.Wrapper):
         self._n_video_saved = 0
         self._n_successful_video_saved = 0
         self._n_successful_videos_to_record = n_successful_videos_to_record
-
+        wandb.init()
+        
     def reset(self, **kwargs):
         self._videos = [[] for _ in range(self._n_recorders)]
         return super().reset(**kwargs)
