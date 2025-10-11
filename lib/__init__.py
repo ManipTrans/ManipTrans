@@ -27,10 +27,10 @@ OmegaConf.register_new_resolver("eq", lambda x, y: x.lower() == y.lower())
 OmegaConf.register_new_resolver("contains", _is_cuda_solver)
 OmegaConf.register_new_resolver("if", lambda pred, a, b: a if pred else b)
 OmegaConf.register_new_resolver("resolve_default", lambda default, arg: default if arg == "" else arg)
-OmegaConf.register_new_resolver("is_both_hands", lambda dim, side: dim if side != "BiH" else dim * 2)
+OmegaConf.register_new_resolver("is_both_hands", lambda dim, side: dim if not side.startswith("BiH") else dim * 2)
 OmegaConf.register_new_resolver("is_sep_model", lambda mode, model: ("" if mode != "sep" else "sep_") + model)
 OmegaConf.register_new_resolver(
-    "is_united_model", lambda mode, side, dim: dim * 2 if mode == "united" and side == "BiH" else dim
+    "is_united_model", lambda mode, side, dim: dim * 2 if mode == "united" and side.startswith("BiH") else dim
 )
 OmegaConf.register_new_resolver(
     "res_side",

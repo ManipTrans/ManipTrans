@@ -267,6 +267,14 @@ ______________________________________________________________________
     python main/rl/train.py task=ResDexHand dexhand=inspire side=BiH headless=false num_envs=4 learning_rate=2e-4 test=true randomStateInit=false dataIndices=[20aed@0] rh_base_model_checkpoint=assets/imitator_rh_inspire.pth lh_base_model_checkpoint=assets/imitator_lh_inspire.pth actionsMovingAverage=0.4 checkpoint=runs/cross_20aed@0_inspire__xxxxxx/nn/cross_20aed@0_inspire.pth
     ```
 
+## 👐 🔵 ManipTrans for GigaHands-BiHSO @ HANDS2025
+
+We also provide an extension of **ManipTrans** to the  
+[GigaHands-BiHSO dataset](https://github.com/Kristen-Z/GigaHands) for the  
+[HANDS2025 HO-Tracker Challenge](https://hands-workshop.org/challenge2025.html).  
+
+👉 Please see the dedicated [README here](docs/README_GigaHands_BiHSO.md) for installation, training, and usage details.
+
 ---
 
 
